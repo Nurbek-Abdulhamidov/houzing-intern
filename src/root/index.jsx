@@ -1,0 +1,20 @@
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import { navbar } from "../utils/navbar";
+
+const Root = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" />} />
+      {/* main */}
+      <Route element={<Navbar />}>
+        {navbar.map(({ Element, path }, index) => {
+          return <Route key={index} path={path} element={Element} />;
+        })}
+      </Route>
+    </Routes>
+  );
+};
+
+export default Root;
