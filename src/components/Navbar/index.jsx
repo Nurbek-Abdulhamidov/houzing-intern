@@ -1,7 +1,15 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import Button from "../Generic/Button";
 import { navbar } from "../../utils/navbar";
-import { Container, Logo, NavbarBody, NavbarWrapper, Wrapper } from "./style";
+import {
+  Container,
+  Logo,
+  NavbarBody,
+  NavbarWrapper,
+  Wrapper,
+  activeStyle,
+} from "./style";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,12 +24,17 @@ const Navbar = () => {
           <NavbarBody>
             {navbar.map((value, index) => {
               return (
-                <NavLink key={index} to={value.path}>
+                <NavLink style={activeStyle} key={index} to={value.path}>
                   {value.title}
                 </NavLink>
               );
             })}
           </NavbarBody>
+          <Logo>
+            <Button width="120px" height="44px">
+              Sig In
+            </Button>
+          </Logo>
         </NavbarWrapper>
       </Container>
       <Outlet />

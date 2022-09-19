@@ -13,6 +13,8 @@ const Root = () => {
           return <Route key={index} path={path} element={Element} />;
         })}
       </Route>
+      {/* not found */}
+      <Route path="*" element={"Not found 404"} />
     </Routes>
   );
 };

@@ -1,8 +1,12 @@
 import React from 'react'
+import HouseCard from '../../HouseCard'
 
 const Recomended = () => {
   return (
-    <div>Recomended</div>
+    <div>Recomended
+      <HouseCard/>
+
+    </div>
   )
 }
 

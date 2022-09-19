@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Home from "./Home";
+import Recomended from "./Recomended";
+import { Container, Wrapper } from "./style";
 
-const Main = () => {
+const Generic = () => {
   return (
-    <div>Main</div>
-  )
-}
+    <Container>
+      <Wrapper>
+        <Home />
+        <Recomended />
+      </Wrapper>
+    </Container> 
+  );
+};
 
-export default Main
+export default Generic;

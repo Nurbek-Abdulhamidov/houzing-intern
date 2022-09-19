@@ -10,7 +10,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--primaryColor);
+  background: #0d263b;
+  /* background: var(--primaryColor); */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -30,7 +31,6 @@ export const NavbarWrapper = styled.div`
   line-height: 24px;
   width: 100%;
   color: #ffffff;
-  background: gray;
 `;
 
 export const Logo = styled.div`
@@ -49,8 +49,23 @@ Logo.Title = styled("div")`
 
 export const NavbarBody = styled.div`
   display: flex;
+  gap: 64px;
   flex: 1;
   align-items: center;
   justify-content: center;
-  color: white;
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+  }
 `;
+
+export const activeStyle = ({ isActive }) => {
+  return {
+    color: isActive ? "#00FFE9" : "#fff",
+    fontWeight: isActive ? 500 : "",
+    fontSize: isActive ? "18px" : "",
+  };
+};
