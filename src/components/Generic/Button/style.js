@@ -1,22 +1,28 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const getType = (type) => {
   switch (type) {
-    case 'secondary':
+    case "secondary":
       return {
-        border: '1px solid #e6e9ec',
-        color: '#0D263B',
+        border: "1px solid #e6e9ec",
+        color: "#0D263B",
       };
-    case 'primary':
+    case "primary":
       return {
-        background: '#0061DF',
-        color: '#FFFFFF',
-        border: 'none',
+        background: "#0061DF",
+        color: "#FFFFFF",
+        border: "none",
+      };
+    case "common":
+      return {
+        background: "transparent",
+        color: "#FFFFFF",
+        border: "1px solid #fff",
       };
     default:
       return {
-        border: '1px solid #E6E9EC',
-        color: '#FFFFFF',
+        border: "1px solid #E6E9EC",
+        color: "#FFFFFF",
       };
   }
 };
@@ -24,7 +30,7 @@ const getType = (type) => {
 const Container = styled.div`
   display: flex;
 
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -32,9 +38,9 @@ const Container = styled.div`
 
   justify-content: center;
   align-items: center;
-  height: ${({ height }) => height || '44px'};
-  min-width: ${({ width }) => (width ? width : '100%')};
-  width: ${({ width }) => (width ? width : '100%')};
+  height: ${({ height }) => height || "44px"};
+  min-width: ${({ width }) => (width ? width : "100%")};
+  width: ${({ width }) => (width ? width : "100%")};
   border-radius: 2px;
   margin-right: ${({ mr }) => `${mr}px`};
   margin-left: ${({ ml }) => `${ml}px`};

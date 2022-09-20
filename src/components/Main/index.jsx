@@ -1,16 +1,18 @@
 import React from "react";
 import Home from "./Home";
 import Recomended from "./Recomended";
-import { Container, Wrapper } from "./style";
+import { Container } from "./style";
+import Filter from "../../components/Filter";
 
 const Generic = () => {
   return (
     <Container>
-      <Wrapper>
+      <div>
+        <Filter />
         <Home />
         <Recomended />
-      </Wrapper>
-    </Container> 
+      </div>
+    </Container>
   );
 };
 

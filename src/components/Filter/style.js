@@ -37,3 +37,19 @@ Icon.Setting = styled(setting)`
 Icon.Search = styled(search)`
   margin-right: 8px;
 `;
+
+export const Address = styled.div``;
+
+export const AddressInputWrapp = styled.div`
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: flex-end;
+`;
+
+Address.title = styled.h3`
+  color: var(--primaryColor);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+`;
