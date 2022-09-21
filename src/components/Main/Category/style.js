@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { ReactComponent as home } from "../../../assets/icons/garage.svg";
+import { ReactComponent as home } from "../../../assets/icons/home 1.svg";
+import { ReactComponent as  office} from "../../../assets/icons/business-and-trade.svg";
+import { ReactComponent as  villa} from "../../../assets/icons/villa.svg";
+import { ReactComponent as  apartment} from "../../../assets/icons/apartment.svg";
+
 
 export const CategoryBloks = styled.div`
   display: flex;
@@ -45,6 +49,31 @@ export const Black = styled.div`
 `;
 
 export const Icon = styled(home)`
+  width: 60px;
+  height: 60px;
+  z-index: 9;
+  & path {
+    fill: white;
+  }
+`;
+
+export const Apartment = styled(apartment)`
+  width: 60px;
+  height: 60px;
+  z-index: 9;
+  & path {
+    fill: white;
+  }
+`;
+export const Villa = styled(villa)`
+  width: 60px;
+  height: 60px;
+  z-index: 9;
+  & path {
+    fill: white;
+  }
+`;
+export const Office = styled(office)`
   width: 60px;
   height: 60px;
   z-index: 9;

@@ -1,6 +1,17 @@
 import React from "react";
 import { HomeContext, HomeParagraph, HomeTitle } from "../Recomended/style";
-import { Black, CategoryBlok, CategoryBloks, Icon, IconBlock, Img } from "./style";
+import {
+  Apartment,
+  Black,
+  Calculator,
+  CategoryBlok,
+  CategoryBloks,
+  Icon,
+  IconBlock,
+  Img,
+  Office,
+  Villa,
+} from "./style";
 import Home from "../../../assets/imgs/home.jpg";
 import Home2 from "../../../assets/imgs/home2.jpg";
 
@@ -26,7 +37,7 @@ const Category = () => {
           <Img src={Home2} alt="" />
           <Black></Black>
           <IconBlock>
-            <Icon />
+            <Apartment />
             <p>Apartment</p>
           </IconBlock>
         </CategoryBlok>
@@ -34,7 +45,7 @@ const Category = () => {
           <Img src={Home} alt="" />
           <Black></Black>
           <IconBlock>
-            <Icon />
+            <Office />
             <p>Office</p>
           </IconBlock>
         </CategoryBlok>
@@ -42,7 +53,7 @@ const Category = () => {
           <Img src={Home2} alt="" />
           <Black></Black>
           <IconBlock>
-            <Icon />
+            <Villa />
             <p>Villa</p>
           </IconBlock>
         </CategoryBlok>

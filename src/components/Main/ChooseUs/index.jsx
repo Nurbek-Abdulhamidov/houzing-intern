@@ -2,10 +2,14 @@ import React from "react";
 import { HomeContext, HomeParagraph, HomeTitle } from "../Recomended/style";
 import {
   Block,
+  Calculator,
   ChooseDiv,
   Description,
+  Discord,
   HomeBloks,
+  House,
   Icon,
+  Map,
   Title,
   Wrapper,
 } from "./style";
@@ -22,7 +26,7 @@ const Choose = () => {
         </HomeContext>
         <HomeBloks>
           <Block>
-            <Icon />
+            <Discord />
             <Title>Trusted By Thousands</Title>
             <Description>
               With over 1 million+ homes for sale available on the website,
@@ -30,7 +34,7 @@ const Choose = () => {
             </Description>
           </Block>
           <Block>
-            <Icon />
+            <House />
             <Title>Trusted By Thousands</Title>
             <Description>
               With over 1 million+ homes for sale available on the website,
@@ -38,7 +42,7 @@ const Choose = () => {
             </Description>
           </Block>
           <Block>
-            <Icon />
+            <Calculator />
             <Title>Trusted By Thousands</Title>
             <Description>
               With over 1 million+ homes for sale available on the website,
@@ -46,7 +50,7 @@ const Choose = () => {
             </Description>
           </Block>
           <Block>
-            <Icon />
+            <Map />
             <Title>Trusted By Thousands</Title>
             <Description>
               With over 1 million+ homes for sale available on the website,

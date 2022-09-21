@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { ReactComponent as message } from "../../../assets/icons/setting.svg";
+import { ReactComponent as map } from "../../../assets/icons/maps.svg";
+import { ReactComponent as discord } from "../../../assets/icons/discord.svg";
+import { ReactComponent as house } from "../../../assets/icons/house 1.svg";
+import { ReactComponent as calculator } from "../../../assets/icons/calculator.svg";
 
 export const ChooseDiv = styled.div`
   display: flex;
@@ -24,7 +27,10 @@ export const Block = styled.div`
   width: 235px;
 `;
 
-export const Icon = styled(message)``;
+export const House = styled(house)``;
+export const Map = styled(map)``;
+export const Discord = styled(discord)``;
+export const Calculator = styled(calculator)``;
 
 export const Title = styled.h4`
   font-weight: 600;
