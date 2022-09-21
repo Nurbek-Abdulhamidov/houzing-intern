@@ -3,7 +3,6 @@ import { HomeContext, HomeParagraph, HomeTitle } from "../Recomended/style";
 import {
   Apartment,
   Black,
-  Calculator,
   CategoryBlok,
   CategoryBloks,
   Icon,

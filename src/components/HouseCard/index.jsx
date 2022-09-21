@@ -14,13 +14,13 @@ import {
 export const HouseCard = ({ info, mr, ml, margin }) => {
   return (
     <Container mr={mr} ml={ml} margin={margin}>
-      <Image src={info?.attachments[0]?.imgPath || noimg} alt="house image" />
+      <Image src={ info?.homeImage || noimg} alt="house image" />
       <InfoWrapper>
         <User>
           <User.Img src={info?.user || nouser} />
         </User>
 
-        <Info.Title>{info?.description || "description"}</Info.Title>
+        <Info.Title>{info?.title || "description"}</Info.Title>
         <Info.Text>
           {info?.name || "house"}, {info?.address || "Address"},{" "}
           {info?.city || "City"} {info?.country || "Country"}
@@ -32,7 +32,7 @@ export const HouseCard = ({ info, mr, ml, margin }) => {
           </Icons.Wrapper>
           <Icons.Wrapper>
             <Icons.Bath />
-            <Info.Text>{info?.houseDetails?.bath || 0} Baths</Info.Text>
+            <Info.Text>{info?.houseDetails?.baths || 0} Baths</Info.Text>
           </Icons.Wrapper>
           <Icons.Wrapper>
             <Icons.Garage />
