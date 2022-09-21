@@ -5,11 +5,20 @@ import { useRef } from "react";
 import {
   CaruselBackground,
   CaruselContent,
+  CaruselContentParagraph,
+  CaruselContentText,
+  CaruselContentTitle,
   CaruselContentWrapper,
+  CaruselContentWrapperBedPrice,
+  CaruselContentWrapperButton,
   CaruselDetails,
   CaruselWrapper,
   Icon,
-  Icons,
+  IconsBath,
+  IconsBed,
+  IconsCar,
+  IconsRuler,
+  IconsWrapper,
   Img,
   MainCarousel,
 } from "./style";
@@ -26,74 +35,75 @@ const Home = () => {
           <Img src={img1} alt="img" />
           <CaruselBackground></CaruselBackground>
           <CaruselContentWrapper>
-            <CaruselContent.title>Skyper Pool Partment</CaruselContent.title>
-            <CaruselContent.paragraph>
+            <CaruselContentTitle>Skyper Pool Partment</CaruselContentTitle>
+            <CaruselContentParagraph>
               112 Glenwood Ave Hyde Park, Boston, MA
-            </CaruselContent.paragraph>
+            </CaruselContentParagraph>
             <CaruselDetails>
-              <Icons.Wrapper>
-                <Icons.Bed />
-                <CaruselContent.text>4 Beds</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Bath />
-                <CaruselContent.text>5 Baths</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Ruler />
-                <CaruselContent.text>1200 Sq Ft</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Car />
-                <CaruselContent.text>1 Garage</CaruselContent.text>
-              </Icons.Wrapper>
+              <IconsWrapper>
+                <IconsBed />
+                <CaruselContentText>4 Beds</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsBath />
+                <CaruselContentText>5 Baths</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsRuler />
+                <CaruselContentText>1200 Sq Ft</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsCar />
+                <CaruselContentText>1 Garage</CaruselContentText>
+              </IconsWrapper>
             </CaruselDetails>
-            <CaruselContentWrapper.BedPrice>
+            <CaruselContentWrapperBedPrice>
               $5,250/mo
-            </CaruselContentWrapper.BedPrice>
-            <CaruselContentWrapper.Button>
+            </CaruselContentWrapperBedPrice>
+            <CaruselContentWrapperButton>
               <Button width="180px" type="common">
                 Read more
               </Button>
-            </CaruselContentWrapper.Button>
+            </CaruselContentWrapperButton>
           </CaruselContentWrapper>
         </CaruselContent>
         <CaruselContent>
           <Img src={img2} alt="img" />
           <CaruselBackground></CaruselBackground>
           <CaruselContentWrapper>
-            <CaruselContent.title>Skyper Pool Partment</CaruselContent.title>
-            <CaruselContent.paragraph>
+            <CaruselContentTitle>Skyper Pool Partment</CaruselContentTitle>
+            <CaruselContentParagraph>
               112 Glenwood Ave Hyde Park, Boston, MA
-            </CaruselContent.paragraph>
+            </CaruselContentParagraph>
             <CaruselDetails>
-              <Icons.Wrapper>
-                <Icons.Bed />
-                <CaruselContent.text>4 Beds</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Bath />
-                <CaruselContent.text>5 Baths</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Ruler />
-                <CaruselContent.text>1200 Sq Ft</CaruselContent.text>
-              </Icons.Wrapper>
-              <Icons.Wrapper>
-                <Icons.Car />
-                <CaruselContent.text>1 Garage</CaruselContent.text>
-              </Icons.Wrapper>
+              <IconsWrapper>
+                <IconsBed />
+                <CaruselContentText>4 Beds</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsBath />
+                <CaruselContentText>5 Baths</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsRuler />
+                <CaruselContentText>1200 Sq Ft</CaruselContentText>
+              </IconsWrapper>
+              <IconsWrapper>
+                <IconsCar />
+                <CaruselContentText>1 Garage</CaruselContentText>
+              </IconsWrapper>
             </CaruselDetails>
-            <CaruselContentWrapper.BedPrice>
+            <CaruselContentWrapperBedPrice>
               $5,250/mo
-            </CaruselContentWrapper.BedPrice>
-            <CaruselContentWrapper.Button>
+            </CaruselContentWrapperBedPrice>
+            <CaruselContentWrapperButton>
               <Button width="180px" type="common">
                 Read more
               </Button>
-            </CaruselContentWrapper.Button>
+            </CaruselContentWrapperButton>
           </CaruselContentWrapper>
         </CaruselContent>
+     
       </MainCarousel>
     </CaruselWrapper>
   );

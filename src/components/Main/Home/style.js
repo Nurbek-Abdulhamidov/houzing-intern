@@ -87,7 +87,7 @@ export const CaruselDetails = styled.div`
   gap: 24px;
 `;
 
-CaruselContent.title = styled.h3`
+export const CaruselContentTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -96,7 +96,7 @@ CaruselContent.title = styled.h3`
   color: #ffffff;
 `;
 
-CaruselContent.paragraph = styled.p`
+export const CaruselContentParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -124,7 +124,7 @@ export const CaruselContentWrapper = styled.div`
 
 export const Icons = styled.div``;
 
-Icons.Wrapper = styled.div`
+export const IconsWrapper = styled.div`
   display: block;
   align-items: center;
   justify-content: space-between;
@@ -133,37 +133,37 @@ Icons.Wrapper = styled.div`
   height: 45px;
 `;
 
-Icons.Bed = styled(bed)`
+export const IconsBed = styled(bed)`
   & path {
     fill: #fff;
   }
 `;
 
-Icons.Bath = styled(ruler)`
+export const IconsBath = styled(ruler)`
   & path {
     fill: #fff;
   }
 `;
 
-Icons.Ruler = styled(bath)`
+export const IconsRuler = styled(bath)`
   & path {
     fill: #fff;
   }
 `;
 
-Icons.Car = styled(garage)`
+export const IconsCar = styled(garage)`
   & path {
     fill: #fff;
   }
 `;
 
-CaruselContent.text = styled.p`
+export const CaruselContentText = styled.p`
   font-style: normal;
   font-size: 16px;
   color: #ffffff;
 `;
 
-CaruselContentWrapper.BedPrice = styled.h2`
+export const CaruselContentWrapperBedPrice = styled.h2`
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
@@ -172,7 +172,7 @@ CaruselContentWrapper.BedPrice = styled.h2`
   margin-top: 24px;
 `;
 
-CaruselContentWrapper.Button = styled.div`
+export const  CaruselContentWrapperButton = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 48px;

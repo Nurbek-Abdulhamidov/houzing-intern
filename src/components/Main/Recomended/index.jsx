@@ -1,18 +1,24 @@
 import React from "react";
 import HouseCard from "../../HouseCard";
-import { Cards, Container, RecomendedContent } from "./style";
+import {
+  Cards,
+  Container,
+  HomeContext,
+  HomeParagraph,
+  HomeTitle,
+} from "./style";
 import { Wrapper } from "./style";
 
 const Recomended = () => {
   return (
     <Container>
       <Wrapper>
-        <RecomendedContent>
-          <RecomendedContent.Title>Recommended</RecomendedContent.Title>
-          <RecomendedContent.Paragraph>
+        <HomeContext>
+          <HomeTitle>Recommended</HomeTitle>
+          <HomeParagraph>
             Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
-          </RecomendedContent.Paragraph>
-        </RecomendedContent>
+          </HomeParagraph>
+        </HomeContext>
         <Cards>
           <HouseCard />
           <HouseCard />

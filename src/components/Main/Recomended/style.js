@@ -5,11 +5,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const RecomendedContent = styled.div`
+export const HomeContext = styled.div`
   text-align: center;
 `;
 
-RecomendedContent.Title = styled.h1`
+export const HomeTitle = styled.h1`
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
@@ -17,7 +17,7 @@ RecomendedContent.Title = styled.h1`
   color: var(--primaryColor);
 `;
 
-RecomendedContent.Paragraph = styled.p`
+export const HomeParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
