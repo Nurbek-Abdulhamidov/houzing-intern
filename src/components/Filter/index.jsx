@@ -1,5 +1,4 @@
 import { Popover } from "antd";
-import "antd/dist/antd.css";
 import React from "react";
 import { Button, Input } from "../Generic";
 import { Address, AddressInputWrapp, Container, Icon, Wrapper } from "./style";

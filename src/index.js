@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-// import "antd/dist/antd.css";
+import "antd/dist/antd.css";
 // import "react-alice-carousel/lib/alice-carousel.css";
 import { BrowserRouter } from "react-router-dom";
 import Root from "./root";

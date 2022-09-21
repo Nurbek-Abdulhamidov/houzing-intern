@@ -7,6 +7,8 @@ import Choose from "./ChooseUs";
 import Category from "./Category";
 import PopularHome from "./PopularHome";
 import Recent from "./Recent";
+import Testimonial from "./Testimonial";
+import Footer from "../Footer";
 
 const Generic = () => {
   return (
@@ -30,6 +32,8 @@ const Generic = () => {
           <Recent />
         </Wrapper>
       </Container>
+      <Testimonial/>
+      <Footer/>
     </>
   );
 };

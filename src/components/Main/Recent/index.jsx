@@ -1,5 +1,11 @@
 import React from "react";
-import { HomeContext, HomeParagraph, HomeTitle } from "../Recomended/style";
+import HouseCard from "../../HouseCard";
+import {
+  Cards,
+  HomeContext,
+  HomeParagraph,
+  HomeTitle,
+} from "../Recomended/style";
 import { RecentDiv } from "./style";
 
 const Recent = () => {
@@ -11,6 +17,11 @@ const Recent = () => {
           Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
         </HomeParagraph>
       </HomeContext>
+      <Cards>
+        <HouseCard />
+        <HouseCard />
+        <HouseCard />
+      </Cards>
     </RecentDiv>
   );
 };
