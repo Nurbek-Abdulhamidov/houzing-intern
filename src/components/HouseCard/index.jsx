@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import noimg from "../../assets/imgs/noimg.jpg";
 import nouser from "../../assets/imgs/nouser.jpg";
 import {
@@ -12,9 +13,15 @@ import {
 } from "./style";
 
 export const HouseCard = ({ info, mr, ml, margin }) => {
+  const navigate = useNavigate();
   return (
-    <Container mr={mr} ml={ml} margin={margin}>
-      <Image src={ info?.homeImage || noimg} alt="house image" />
+    <Container
+      mr={mr}
+      ml={ml}
+      margin={margin}
+      onClick={() => navigate(`/properties:${info.id}`)}
+    >
+      <Image src={info?.homeImage || noimg} alt="house image" />
       <InfoWrapper>
         <User>
           <User.Img src={info?.user || nouser} />

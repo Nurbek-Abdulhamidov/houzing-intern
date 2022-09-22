@@ -3,6 +3,7 @@ import Contact from "../pages/Contact";
 import Main from "../pages/Main";
 // components
 import Properties from "../pages/Properties";
+import PropertiesList from "../pages/PropertiesList";
 
 export const navbar = [
   {
@@ -24,12 +25,17 @@ export const navbar = [
     Element: <Properties />,
   },
   {
-    id: 2,
+    id: 3,
     title: "Contacts",
     path: "/contacts",
     private: false,
     hidden: false,
     search: "?",
     Element: <Contact />,
+  },
+  {
+    id: 4,
+    path: "/properties:id",
+    Element: <PropertiesList />,
   },
 ];

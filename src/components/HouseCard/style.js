@@ -21,7 +21,9 @@ export const Container = styled.div`
   margin-bottom: 10px;
   border: 1px solid #e6e9ec;
   border-radius: 3px;
-  
+  cursor: pointer;
+  margin: 10px 0;
+
   :hover {
     filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
       drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
@@ -68,6 +70,7 @@ Info.Title = styled.div`
 
 Info.Text = styled.div`
   display: flex;
+  gap: 10px;
   white-space: nowrap;
   overflow: hidden;
   font-family: "Montserrat";
