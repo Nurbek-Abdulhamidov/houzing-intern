@@ -2,7 +2,6 @@ import React from "react";
 import Home from "./Home";
 import Recomended from "./Recomended";
 import { Container, Wrapper } from "./style";
-import Filter from "../../components/Filter";
 import Choose from "./ChooseUs";
 import Category from "./Category";
 import PopularHome from "./PopularHome";
@@ -15,7 +14,6 @@ const Generic = () => {
     <>
       <Container>
         <Wrapper>
-          <Filter />
           <Home />
           <Recomended />
         </Wrapper>
@@ -32,8 +30,7 @@ const Generic = () => {
           <Recent />
         </Wrapper>
       </Container>
-      <Testimonial/>
-      <Footer/>
+      <Testimonial />
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
+import PropertiesList from "../components/PropertiesList";
 import Contact from "../pages/Contact";
 import Main from "../pages/Main";
 // components
 import Properties from "../pages/Properties";
-import PropertiesList from "../pages/PropertiesList";
 
 export const navbar = [
   {
@@ -35,7 +35,20 @@ export const navbar = [
   },
   {
     id: 4,
+    title: "Property list",
     path: "/properties:id",
+    private: false,
+    hidden: true,
+    search: "?",
     Element: <PropertiesList />,
+  },
+  {
+    id: 5,
+    title: "Sign In",
+    path: "/signIn",
+    private: false,
+    hidden: true,
+    search: "?",
+    Element: <h1>Sign in</h1>,
   },
 ];

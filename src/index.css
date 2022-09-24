@@ -37,3 +37,18 @@ body {
   display: flex;
   gap: 20px;
 }
+
+.subTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0d263b;
+  margin: 10px 0 0 0;
+}
+
+.grayTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696969;
+}

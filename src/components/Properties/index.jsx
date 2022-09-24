@@ -5,14 +5,11 @@ import Property from "./Property";
 
 const Properties = () => {
   return (
-    <>
-      <Container>
-        <Wrapper>
-          <Property />
-        </Wrapper>
-      </Container>
-      <Footer />
-    </>
+    <Container>
+      <Wrapper>
+        <Property />
+      </Wrapper>
+    </Container>
   );
 };
 

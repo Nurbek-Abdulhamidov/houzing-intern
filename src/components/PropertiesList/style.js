@@ -52,21 +52,58 @@ export const Resize = styled(resize)``;
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  font-family: "Montserrat";
 `;
 
 export const Wrapper = styled.div`
-  width: 1440px;
+  max-width: 1440px;
 `;
 
 export const Images = styled.div`
+  display: flex;
+  gap: 20px;
+  overflow: auto;
   margin: 24px 0;
+
+  .ant-image-preview-img {
+    width: 45%;
+  }
+`;
+
+export const ImageContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
+export const LoadImg = styled.div`
+  position: relative;
+`;
+
+export const Blur = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 export const MainInfo = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+export const AmountImg = styled.div`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 `;
 
 export const LeftInfo = styled.div`
@@ -200,7 +237,6 @@ export const Table = styled.table`
 
   td {
     padding: 5px 0;
-
   }
   span {
     font-weight: 400;
@@ -244,16 +280,6 @@ export const Item = styled.div`
 
 export const Location = styled.div`
   margin: 48px 0;
-`;
-
-export const PropertyDetails = styled.div`
-  border-bottom: 1px solid #e6e9ec;
-  padding: 24px 0;
-`;
-
-export const Features = styled.div`
-  border-bottom: 1px solid #e6e9ec;
-  padding: 24px 0;
 `;
 
 export const RightInfo = styled.div`
@@ -306,6 +332,16 @@ export const Message = styled.p`
 
 export const Textarea = styled.textarea`
   width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d263b;
+  border: 1px solid #e6e9ec;
+  margin-top: ${({ mt }) => (mt ? mt : 0)};
+  margin-bottom: ${({ mb }) => (mb ? mb : 0)};
 `;
 
 export const Agree = styled.div`
@@ -319,4 +355,11 @@ export const Agree = styled.div`
     line-height: 20px;
     color: #696969;
   }
+`;
+
+export const CustomerInfo = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 `;

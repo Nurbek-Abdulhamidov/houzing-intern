@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import Button from "../Generic/Button";
 import { navbar } from "../../utils/navbar";
+import Filter from "../Filter";
 import {
   Container,
   Logo,
@@ -10,6 +11,7 @@ import {
   Wrapper,
   activeStyle,
 } from "./style";
+import Footer from "../Footer";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -22,22 +24,30 @@ const Navbar = () => {
             <Logo.Title>Houzing</Logo.Title>
           </Logo>
           <NavbarBody>
-            {navbar.map((value, index) => {
+            {navbar.map(({ title, path, hidden }, index) => {
               return (
-                <NavLink style={activeStyle} key={index} to={value.path}>
-                  {value.title}
-                </NavLink>
+                !hidden && (
+                  <NavLink style={activeStyle} key={index} to={path}>
+                    {title}
+                  </NavLink>
+                )
               );
             })}
           </NavbarBody>
           <Logo>
-            <Button width="120px" height="44px">
+            <Button
+              onClick={() => navigate("/signIn")}
+              width="120px"
+              height="44px"
+            >
               Sig In
             </Button>
           </Logo>
         </NavbarWrapper>
       </Container>
+      <Filter />
       <Outlet />
+      <Footer />
     </Wrapper>
   );
 };
